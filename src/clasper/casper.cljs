@@ -22,6 +22,19 @@
 (defn on
       "set up an event"
       [event f] (.on *casper* event f))
+(def add-listener on)
+
+(defn once
+  "Do a listener once"
+  [event f] (.once *casper* event f))
+
+(defn remove-listener
+  "Remove a listener event"
+  [event f] (.removeListener *casper* event f))
+
+(defn remove-all-listeners
+  "Remove all listeners of a type"
+  [event] (.removeAllListeners *casper* event))
 
 (defn emit
   "Emit an event"
@@ -31,6 +44,9 @@
 (defn set-filter
   "Set up a filter"
   [event f] (.setFilter *casper* event f))
+
+(defn remove-all-filters
+  [type] (.removeAllFilters *casper* type))
 
 ;; Casper API
 (defn back
