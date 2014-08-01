@@ -13,7 +13,9 @@
 
 ClojureScript API for CasperJS.
 
-## Verision
+*Notice. Clasper is pre-alpha and in active development. Please wait before use.*
+
+## Version
 Current version: `0.1`
 
 ## Acknowledgements
@@ -25,3 +27,5 @@ Clasper was written to aid remote testing and will eventually include more utili
 ## Contributers
 * [Chet Mancini](http://github.com/chetmancini)
 
+## License
+Eclipse. Same as Clojure/script. Provided without warranty.
